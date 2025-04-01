@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# Dialogue Tree Editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A visual editor for creating and managing dialogue trees in games or interactive stories. Built with React and ReactFlow, this tool allows you to create, edit, and visualize branching dialogue structures with an intuitive drag-and-drop interface.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🎯 Visual node-based dialogue tree editor
+- 🔄 Drag-and-drop interface for easy node positioning
+- 📝 Edit dialogue text and speaker information
+- 🔗 Create and manage dialogue branches
+- 💾 Automatic saving of node positions and dialogue structure
+- 🎨 Clean, modern UI with a responsive design
+- 🔍 Mini-map for easy navigation of large dialogue trees
+- 🖱️ Context menus for quick editing and deletion
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14 or higher)
+- npm (v6 or higher)
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/dialoguetree.git
+cd dialoguetree
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+```bash
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will start both the React frontend and the Express backend server concurrently.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+### Basic Operations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Creating Nodes**
+   - Click on a node to select it
+   - Click "Add Connected Node" to create a new dialogue node
+   - Fill in the speaker and dialogue text
+   - Enter the choice text that leads to this node
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Editing Nodes**
+   - Click on any node to open the edit panel
+   - Modify the speaker and dialogue text
+   - Save changes or delete the node
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Managing Connections**
+   - Click on any connection to edit the choice text
+   - Drag from one node's handle to another to create new connections
+   - Delete connections using the context menu
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **Navigation**
+   - Use the minimap in the bottom-right corner for quick navigation
+   - Pan the canvas by dragging the background
+   - Zoom in/out using the mouse wheel or controls
 
-## Learn More
+### File Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Dialogue trees are saved as JSON files in the following format:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```json
+{
+  "start": {
+    "speaker": "Character Name",
+    "text": "Dialogue text here",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Player response",
+        "next": "next_node_id"
+      }
+    ],
+    "position": {
+      "x": 0,
+      "y": 0
+    }
+  }
+}
+```
 
-### Code Splitting
+## Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Project Structure
 
-### Analyzing the Bundle Size
+```
+dialoguetree/
+├── public/
+│   └── alessandro1.json    # Example dialogue file
+├── src/
+│   ├── App.js             # Main application component
+│   ├── App.css            # Application styles
+│   └── index.js           # Application entry point
+├── server.js              # Express backend server
+└── package.json           # Project dependencies and scripts
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Available Scripts
 
-### Making a Progressive Web App
+- `npm start` - Start the React development server
+- `npm run server` - Start the Express backend server
+- `npm run dev` - Start both servers concurrently
+- `npm run build` - Build the production version
+- `npm test` - Run tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgments
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ReactFlow](https://reactflow.dev/) for the node-based visualization
+- [React](https://reactjs.org/) for the UI framework
+- [Express](https://expressjs.com/) for the backend server
