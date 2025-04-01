@@ -1,0 +1,201 @@
+{
+  "start": {
+    "speaker": "Alessandro",
+    "text": "Hello and well met. This place is beautiful, isn't it?",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Who are you?",
+        "next": "who_are_you"
+      },
+      {
+        "speaker": "Player",
+        "text": "Why are you here?",
+        "next": "why_are_you_here"
+      }
+    ],
+    "position": {
+      "x": 304,
+      "y": -336
+    }
+  },
+  "who_are_you": {
+    "speaker": "Alessandro",
+    "text": "I am but a humble sinner. My name is Alessandro.",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Why are you here?",
+        "next": "why_are_you_here"
+      },
+      {
+        "speaker": "Player",
+        "text": "You talk funny.",
+        "next": "jester_response"
+      },
+      {
+        "speaker": "Player",
+        "text": "Okay.",
+        "next": "seem_like_traveler"
+      }
+    ],
+    "position": {
+      "x": 660,
+      "y": -114
+    }
+  },
+  "why_are_you_here": {
+    "speaker": "Alessandro",
+    "text": "I am on a pilgrimage. My path goes beyond, down the way you just came.",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "I see.",
+        "next": "seem_like_traveler"
+      },
+      {
+        "speaker": "Player",
+        "text": "No, why are you here specifically?",
+        "next": "why_here_specific"
+      },
+      {
+        "speaker": "Player",
+        "text": "I am also a pilgrim.",
+        "next": "pilgrim_path"
+      }
+    ],
+    "position": {
+      "x": -72,
+      "y": 168
+    }
+  },
+  "jester_response": {
+    "speaker": "Alessandro",
+    "text": "I am a jester too. But listen to my words.",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Okay.",
+        "next": "seem_like_traveler"
+      }
+    ],
+    "position": {
+      "x": 1199.6130350981393,
+      "y": 91.42203088225517
+    }
+  },
+  "why_here_specific": {
+    "speaker": "Alessandro",
+    "text": "You are a curious one, huh? I suppose my maker placed me here to instruct you.",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Sure.",
+        "next": "seem_like_traveler"
+      }
+    ],
+    "position": {
+      "x": 1200,
+      "y": 1400
+    }
+  },
+  "pilgrim_path": {
+    "speaker": "Alessandro",
+    "text": "Headed?",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Forwards. Purely forwards. Forwards always.",
+        "next": "node_1743375095664"
+      }
+    ],
+    "position": {
+      "x": 1400,
+      "y": 300
+    }
+  },
+  "seem_like_traveler": {
+    "speaker": "Alessandro",
+    "text": "You, you seem like a traveler. Where are you headed?",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Forwards. Purely forwards. Forwards always.",
+        "next": "confirm_pilgrimage"
+      }
+    ],
+    "position": {
+      "x": 470,
+      "y": 482
+    }
+  },
+  "confirm_pilgrimage": {
+    "speaker": "Alessandro",
+    "text": "Ah, so you are also on a pilgrimage?",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Yep.",
+        "next": "pilgrim_path"
+      }
+    ],
+    "position": {
+      "x": 1252,
+      "y": 772
+    }
+  },
+  "node_1743375095664": {
+    "speaker": "Alessandro",
+    "text": "So you know what you're doing then? Wonderful. I hope you are transformed.",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "Like physically?",
+        "next": "node_1743375154069"
+      }
+    ],
+    "position": {
+      "x": 2130,
+      "y": 566
+    }
+  },
+  "node_1743375154069": {
+    "speaker": "Alessandro",
+    "text": "Within you. Let this journey serve as an instruction. Learn to read your spiritual landscape here, and you can read any landscape. Yes, even outside the game.",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "What are you talking about?",
+        "next": "node_1743375192361"
+      }
+    ],
+    "position": {
+      "x": 2800,
+      "y": 0
+    }
+  },
+  "node_1743375192361": {
+    "speaker": "Alessandro",
+    "text": "Just consider it.",
+    "choices": [
+      {
+        "speaker": "Player",
+        "text": "...okay.",
+        "next": "node_1743375239756"
+      }
+    ],
+    "position": {
+      "x": 3200,
+      "y": 0
+    }
+  },
+  "node_1743375239756": {
+    "speaker": "Alessandro",
+    "text": "Fare well, fellow pilgrim. God be with you.",
+    "choices": [],
+    "position": {
+      "x": 3600,
+      "y": 0
+    }
+  }
+}

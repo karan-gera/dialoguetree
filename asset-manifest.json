@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dialoguetree/static/css/main.84c8750e.css",
+    "main.js": "/dialoguetree/static/js/main.40b40eb7.js",
+    "static/js/453.d8d72cfa.chunk.js": "/dialoguetree/static/js/453.d8d72cfa.chunk.js",
+    "index.html": "/dialoguetree/index.html",
+    "main.84c8750e.css.map": "/dialoguetree/static/css/main.84c8750e.css.map",
+    "main.40b40eb7.js.map": "/dialoguetree/static/js/main.40b40eb7.js.map",
+    "453.d8d72cfa.chunk.js.map": "/dialoguetree/static/js/453.d8d72cfa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84c8750e.css",
+    "static/js/main.40b40eb7.js"
+  ]
+}
